@@ -9,148 +9,92 @@
     <servlet-class>uts.isd.controller.ConnServlet</servlet-class>
     <load-on-startup>0</load-on-startup>
   </servlet>
-  <servlet>
-    <servlet-name>AddCustomerServlet</servlet-name>
-    <servlet-class>uts.isd.controller.AddCustomerServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>CustomerManagementServlet</servlet-name>
-    <servlet-class>uts.isd.controller.CustomerManagementServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>DeleteCustomerServlet</servlet-name>
-    <servlet-class>uts.isd.controller.DeleteCustomerServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>UpdateCustomerServlet</servlet-name>
-    <servlet-class>uts.isd.controller.UpdateCustomerServlet</servlet-class>
-  </servlet>
   <servlet-mapping>
     <servlet-name>ConnServlet</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-    <servlet-name>AddCustomerServlet</servlet-name>
-    <url-pattern>/AddCustomerServlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>CustomerManagementServlet</servlet-name>
-    <url-pattern>/CustomerManagementServlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>DeleteCustomerServlet</servlet-name>
-    <url-pattern>/DeleteCustomerServlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>UpdateCustomerServlet</servlet-name>
-    <url-pattern>/UpdateCustomerServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <servlet-name>ConnServlet</servlet-name>
-    <servlet-class>uts.isd.controller.ConnServlet</servlet-class>
-    <load-on-startup>0</load-on-startup>
-  </servlet>
-  <servlet-mapping>
     <servlet-name>ConnServlet</servlet-name>
     <url-pattern>/ConnServlet</url-pattern>
   </servlet-mapping>
 	<servlet>
-		<servlet-name>BrowseDeviceServlet</servlet-name>
-		<servlet-class>uts.isd.controller.BrowseDeviceServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>BrowseDeviceServlet</servlet-name>
-		<url-pattern>/BrowseDeviceServlet</url-pattern>
-	</servlet-mapping>
-	<!-- Servlet for searching devices -->
-	<servlet>
-		<servlet-name>SearchDeviceServlet</servlet-name>
-		<servlet-class>uts.isd.controller.SearchDeviceServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>SearchDeviceServlet</servlet-name>
-		<url-pattern>/SearchDeviceServlet</url-pattern>
-	</servlet-mapping>
-	<servlet>
-		<servlet-name>AddDeviceServlet</servlet-name>
-		<servlet-class>uts.isd.controller.AddDeviceServlet</servlet-class>
-	<multipart-config>
-      <max-file-size>1048576</max-file-size>
-      <max-request-size>1048576</max-request-size>
-      <file-size-threshold>1024</file-size-threshold>
-  </multipart-config>
-  </servlet>
-	<servlet-mapping>
-		<servlet-name>AddDeviceServlet</servlet-name>
-		<url-pattern>/AddDeviceServlet</url-pattern>
-	</servlet-mapping>
-	<servlet>
-		<servlet-name>UpdateDeviceServlet</servlet-name>
-		<servlet-class>uts.isd.controller.UpdateDeviceServlet</servlet-class>
-	<multipart-config>
-      <max-file-size>1048576</max-file-size>
-      <max-request-size>1048576</max-request-size>
-      <file-size-threshold>1024</file-size-threshold>
-  </multipart-config>
-  </servlet>
-	<servlet-mapping>
-		<servlet-name>UpdateDeviceServlet</servlet-name>
-		<url-pattern>/UpdateDeviceServlet</url-pattern>
-	</servlet-mapping>
-	<servlet>
-		<servlet-name>DeleteDeviceServlet</servlet-name>
-		<servlet-class>uts.isd.controller.DeleteDeviceServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>DeleteDeviceServlet</servlet-name>
-		<url-pattern>/DeleteDeviceServlet</url-pattern>
-	</servlet-mapping>
-  <servlet>
-    <servlet-name>ViewDeviceServlet</servlet-name>
-    <servlet-class>uts.isd.controller.ViewDeviceServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-      <servlet-name>ViewDeviceServlet</servlet-name>
-      <url-pattern>/ViewDeviceServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <servlet-name>AddPaymentServlet</servlet-name>
-    <servlet-class>uts.isd.controller.AddPaymentServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-      <servlet-name>AddPaymentServlet</servlet-name>
-      <url-pattern>/AddPaymentServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <servlet-name>DeletePaymentServlet</servlet-name>
-    <servlet-class>uts.isd.controller.DeletePaymentServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>DeletePaymentServlet</servlet-name>
-    <url-pattern>/DeletePaymentServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <servlet-name>UpdatePaymentServlet</servlet-name>
-    <servlet-class>uts.isd.controller.UpdatePaymentServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>UpdatePaymentServlet</servlet-name>
-    <url-pattern>/UpdatePaymentServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <servlet-name>ViewPaymentServlet</servlet-name>
-    <servlet-class>uts.isd.controller.ViewPaymentServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-      <servlet-name>ViewPaymentServlet</servlet-name>
-      <url-pattern>/ViewPaymentServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <servlet-name>OrderServlet</servlet-name>
-    <servlet-class>uts.isd.controller.OrderServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-      <servlet-name>OrderServlet</servlet-name>
-      <url-pattern>/OrderServlet</url-pattern>
-  </servlet-mapping>
+        <servlet-name>AddOpalCardServlet</servlet-name>
+        <servlet-class>uts.isd.controller.AddOpalCardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddOpalCardServlet</servlet-name>
+        <url-pattern>/AddOpalCardServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Update Opal Card Servlet -->
+    <servlet>
+        <servlet-name>UpdateOpalCardServlet</servlet-name>
+        <servlet-class>uts.isd.controller.UpdateOpalCardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateOpalCardServlet</servlet-name>
+        <url-pattern>/UpdateOpalCardServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Delete Opal Card Servlet -->
+    <servlet>
+        <servlet-name>DeleteOpalCardServlet</servlet-name>
+        <servlet-class>uts.isd.controller.DeleteOpalCardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteOpalCardServlet</servlet-name>
+        <url-pattern>/DeleteOpalCardServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- List Opal Cards Servlet -->
+    <servlet>
+        <servlet-name>ListOpalCardsServlet</servlet-name>
+        <servlet-class>uts.isd.controller.ListOpalCardsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListOpalCardsServlet</servlet-name>
+        <url-pattern>/ListOpalCardsServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Saved Trips Management Servlets -->
+    
+    <!-- Add Saved Trip Servlet -->
+    <servlet>
+        <servlet-name>AddSavedTripServlet</servlet-name>
+        <servlet-class>uts.isd.controller.AddSavedTripServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddSavedTripServlet</servlet-name>
+        <url-pattern>/AddSavedTripServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Update Saved Trip Servlet -->
+    <servlet>
+        <servlet-name>UpdateSavedTripServlet</servlet-name>
+        <servlet-class>uts.isd.controller.UpdateSavedTripServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateSavedTripServlet</servlet-name>
+        <url-pattern>/UpdateSavedTripServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Delete Saved Trip Servlet -->
+    <servlet>
+        <servlet-name>DeleteSavedTripServlet</servlet-name>
+        <servlet-class>uts.isd.controller.DeleteSavedTripServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteSavedTripServlet</servlet-name>
+        <url-pattern>/DeleteSavedTripServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- List Saved Trips Servlet -->
+    <servlet>
+        <servlet-name>ListSavedTripsServlet</servlet-name>
+        <servlet-class>uts.isd.controller.ListSavedTripsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListSavedTripsServlet</servlet-name>
+        <url-pattern>/ListSavedTripsServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
